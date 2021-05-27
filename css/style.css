@@ -1,0 +1,382 @@
+body {
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: white;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.slides-navigation {
+    z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../images/back.png);
+}
+
+.slides-navigation a.next {
+    background-image: url(../images/next.png);
+}
+
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 3;
+    top: 50%;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.titleMessage .heading p {
+    color: white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0,2);
+    font-weight: 300;
+    letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+    font-size: 60px;
+}
+
+.titleMessage .heading .sub {
+    font-size: 24px;
+}
+
+.section {
+    padding: 100px 0;
+    color: black;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+.section h4 {
+    color: white;
+    margin-top: 10px;
+}
+
+.aboutMeImage {
+    max-width: 90%;
+    margin-left: 5%;
+}
+
+.skillsSection {
+    background-color: #ff6b6b;
+    text-align: center;
+}
+
+.skillsSection h2 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.chart {
+    width: 152px;
+    height: 152px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+    color: black;
+    font-weight: 700;
+    line-height: 152px;
+    font-size: 20px;
+}
+
+.chart .percent:after {
+    content: '%';
+}
+
+.squareItem {
+    margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContatainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.squareInnerContatainer:before,
+.squareInnerContatainer:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid black;
+}
+
+.squareInnerContatainer:before {
+    right: 0px;
+}
+
+.squareInnerContatainer:after {
+    left: 0px;
+}
+
+.squareContent h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: red;
+}
+
+.squareContent h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.squareIcon {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    width:  40%;
+    height: 50px;
+    font-size: 45px;
+    margin-left: -20%;
+}
+
+.contactSection {
+    background-color: #ff6b6b;
+    text-align: center;
+    color: white;
+}
+
+.contactButton {
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+}
+
+.contactButton:hover {
+    text-decoration: none;
+    color: #ff6b6b;
+    background-color: white;
+}
+
+.filter a {
+    color: #576574;
+    border: 1px solid #576574;
+    padding: 10px 20px;
+    display: block;
+}
+
+.filter li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.filter .current {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    color: white;
+}
+
+.filter {
+    text-align: center;
+    width: 100%;
+}
+
+.filter ul {
+    padding: 0px;
+}
+
+.section .heading {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.items li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.items li img {
+    width: 100%;
+
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.itemsContainer {
+    width: 100%;
+}
+
+.items .icons {
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -20px auto 0 -40px;
+    text-align: center;
+    z-index: 3;
+}
+
+.items .icons i {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.items .icons a {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6b6b;
+    position: relative;
+    display: inline-block;
+
+    -webkit-transition: all 0.2s linear, 0.2s;
+    -moz-transition: all 0.2s linear, 0.2s;
+    -o-transition: all 0.2s linear, 0.2s;
+    -ms-transition: all 0.2s linear, 0.2s;
+    -transition: all 0.2s linear, 0.2s;
+}
+
+.items .imageOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item:hover .imageOverlay {
+    opacity: 1;
+}
+
+.items .openButton {
+    float: left;
+    left: -200px;
+}
+
+.items .link {
+    float: right;
+    right: -200px;
+}
+
+.items .item:hover .openButton {
+    left: 0px;
+}
+
+.items .item:hover .link {
+    right: 0px;
+}
+
+.items .item:hover img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -transform: scale(1.05, 1.05);
+}
+
+.items {
+    padding: 0px;
+}
+
+.copyrightSection {
+    background-color: black;
+    color: white;
+    padding: 30px 5px;
+}
+
+.copyrightSection p {
+    margin: 0;
+    font-weight: 600;
+}
+
+#navigation {
+    background-color: #ff6b6b;
+    padding: 20px 10px;
+    z-index: 10;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: white;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background: url(../images/menu.png);
+    background-size: 100%;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+}
+
+.loader .inner {
+    width: 100%;
+    height: 100%;
+    background: url(../images/basketball1.gif) center center no-repeat;
+}

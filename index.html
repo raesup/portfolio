@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/superslides.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <title>SUP, I'm RAESUP</title>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloaderImg"></div>
+    </div>
+
+    <div id="slides">
+        <div class="overlay">
+
+        </div>
+        <div class="slides-container">
+          <img src="images/portfolioSlide1.jpg" alt="">
+          <img src="images/portfolioSlide2.jpg" alt="">
+          <img src="images/portfolioSlide3.jpg" alt="">
+        </div>
+
+        <div class="titleMessage">
+            <div class="heading">
+                <p class="main">SUP, I'm</p>
+                <p class="sub">RAESUP</p>
+            </div>
+        </div>
+
+        <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></i></a>
+        </nav>
+    </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#aboutMe">Raesup Kim</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#skills">Skills<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats">Stats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div id="aboutMe" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="aboutMeImage" src="images/raesup1.jpg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h2>Raesup Kim</h2>
+                    <br />
+                    <p>
+                        Hi, there! I am Raesup Kim and have many years experience working as an assistant manager in IT department in Pulumone, Seoul, South Korea. I have experience planning new IT projects and managing them including websites for e-commerce, legacy system for sales management and mobile applications for various businesses.
+                    </p>
+                    <p>
+                        I have experience programming in languages and frameworks such as HTML, CSS, Java, JavaScript, C, Node.js, React, SQL, MongoDB and so on.
+                    </p>
+                    <p>
+                        I have a diploma in Information Technology Software development at Southern Alberta Institute of Technology (SAIT) in Calgary, Canada and also have bachelor's degree in Business Administration at Sungkyunkwan University in Seoul, South Korea. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience" class="experienceSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>EXPERIENCE</h2>
+                </div>
+
+                <div class="col-md-4">
+                    <img class="aboutMeImage" src="images/raesup1.jpg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h2>Pulmuone CO, Ltd.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="portfolioSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>PORTFOLIO</h2>
+                </div>
+
+                <div class="col-md-4">
+                    <img class="aboutMeImage" src="images/raesup1.jpg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h2>Pulmuone CO, Ltd.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id=portfolio class="section">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>PORTFOLIO</h2>
+                </div>
+
+                <div class="filter">
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
+						<li><a href="#" data-filter=".app">Apps</a></li>
+						<li><a href="#" data-filter=".website">Websites</a></li>
+                    </ul>
+                </div>
+
+                <div class="itemsContainer">
+                    <ul class="items">
+                        <li class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                        <li class="app col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="images/portfolio/thumbnails/raesupbb-thumbnail.jpg" alt="">
+
+                                <div class="icons">
+                                    <a href="images/portfolio/raesupbb.jpg" title="View image" class="openButton" data-fancybox data-caption="Me playing basketball">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="link">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+        <div class="col-md-12 text-center">
+            <h2>Contact</h2>
+            <p>Email: raesupkim@gmail.com</p>
+            <a href="mailTo:raesupkim@gmail.com" class="contactButton">Get in touch!</a>
+        </div>
+    </div>
+
+    <div class="copyrightSection section">
+        <div class="col-md-12 text-center">
+            <p>RAESUP KIM &copy; 2021</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.superslides.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
