@@ -139,7 +139,7 @@ body {
 .inner .item .icons a {
     width: 40px;
     height: 40px;
-    background-color: #0a3d62;
+    background-color: #222f3e;
     position: relative;
     display: inline-block;
 }
@@ -170,7 +170,7 @@ body {
 }
 
 .inner:hover {
-    background-color: #3c6382;
+    background-color: #576574;
     color: white;
 }
 
@@ -193,7 +193,7 @@ body {
 .spec h5 {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #0a3d62;
+    color: #222f3e;
 
     -webkit-transition: all 0.2s linear, 1s;
     -moz-transition: all 0.2s linear, 1s;
@@ -221,10 +221,32 @@ body {
     -transition: all 0.2s linear, 1s;
 }
 
+.portfolioSection .works {
+
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.portfolioSection .works:hover {
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 50px 50px rgb(0 0 0 / 30%);
+}
+
 .portfolioSection .works .title {
     text-align: right;
     margin-top: 20px;
     margin-right: 10px;
+}
+
+.portfolioSection img {
+    width: 80%;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10%;
 }
 
 .gallerySection {
@@ -244,8 +266,8 @@ body {
 }
 
 .filter .current {
-    background-color: #0a3d62;
-    border-color: #0a3d62;
+    background-color: #222f3e;
+    border-color: #222f3e;
     color: white;
 }
 
@@ -309,7 +331,7 @@ body {
 .items .icons a {
     width: 40px;
     height: 40px;
-    background-color: #0a3d62;
+    background-color: #222f3e;
     position: relative;
     display: inline-block;
 
@@ -373,7 +395,7 @@ body {
 }
 
 .contactSection {
-    background-color: #0a3d62;
+    background-color: #222f3e;
     text-align: center;
     color: white;
 }
@@ -389,12 +411,12 @@ body {
 
 .contactButton:hover {
     text-decoration: none;
-    color: #0a3d62;
+    color: #222f3e;
     background-color: white;
 }
 
 .copyrightSection {
-    background-color: #0a3d62;
+    background-color: #222f3e;
     color: white;
     padding: 30px 5px;
 }
@@ -405,7 +427,7 @@ body {
 }
 
 #navigation {
-    background-color: #0a3d62;
+    background-color: #222f3e;
     padding: 20px 10px;
     z-index: 10;
 }
