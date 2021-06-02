@@ -211,14 +211,17 @@ body {
 }
 
 .portfolioSection .works {
-    background: linear-gradient(
-        338.83deg
-        ,#f8c6ff -3.41%,rgba(255,196,255,0) 52.31%),#ffeec4;
     border-radius: 15px;
     max-width: 80%;
-    max-height: 10%;
+    min-height: 645px;
     margin-left: 10%;
     position: relative;
+
+    display: none;
+    overflow: hidden;
+    position: relative;
+    /* animation-duration: 3s; */
+    /* animation-name: slideIn; */
 
     -webkit-transition: all 0.2s linear, 1s;
     -moz-transition: all 0.2s linear, 1s;
@@ -227,14 +230,31 @@ body {
     -transition: all 0.2s linear, 1s;
 }
 
-/* .portfolioSection .works {
+/* @keyframes slideIn {
+    from {
+        margin-left: 100%;
+        width: 100%;
+        height: 100%;
+    }
 
-    -webkit-transition: all 0.2s linear, 1s;
-    -moz-transition: all 0.2s linear, 1s;
-    -o-transition: all 0.2s linear, 1s;
-    -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
+    to {
+        margin-left: 10%;
+        width: 100%;
+        height: 100%;
+    }
 } */
+
+.portfolioSection .odd{
+    background: linear-gradient(
+        338.83deg
+        ,#f8c6ff -3.41%,rgba(255,196,255,0) 52.31%),#ffeec4;
+}
+
+.portfolioSection .even{
+    background: linear-gradient(
+        314.25deg
+        ,rgba(10,185,149,.7) 1.09%,rgba(10,185,149,0) 43.26%),#dacdff;
+}
 
 .portfolioSection .works:hover {
     transform: translate3d(0,-5px,0);
@@ -248,49 +268,18 @@ body {
     color: #222f3e;
 }
 
-a:hover {
-    text-decoration: none;
-}
-
 .portfolioSection .works .slideImage img {
     width: 80%;
     max-height: 500px;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 10%;
-
-    -webkit-transition: all 0.2s linear, 1s;
-    -moz-transition: all 0.2s linear, 1s;
-    -o-transition: all 0.2s linear, 1s;
-    -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
-}
-
-.slideImage {
-    display: none;
-    overflow: hidden;
-    position: relative;
-    animation-duration: 3s;
-    animation-name: slideIn;
-}
-
-@keyframes slideIn {
-    from {
-        margin-left: 100%;
-        width: 100%;
-        height: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-        height: 100%;
-    }
 }
 
 .prevButton, .nextButton {
     position: absolute;
     top: 50%;
+    transition: transform 1s;
 }
 
 .prevButton {
@@ -304,6 +293,11 @@ a:hover {
 .fa-angle-left,
 .fa-angle-right {
     color: #222f3e;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+    transform: scale(1.5);
 }
 
 .gallerySection {
@@ -421,22 +415,14 @@ a:hover {
 
 .items .openButton {
     float: left;
-    left: -2000px;
+    top: -2000px;
     z-index: -10;
-}
-
-.items .link {
-    float: right;
-    right: -2000px;
-    z-index: -10;
+    left: 30%;
 }
 
 .items :hover .openButton {
-    left: 0px;
-}
-
-.items :hover .link {
-    right: 0px;
+    top: 0px;
+    left: 30%;
 }
 
 .items :hover img {
@@ -470,6 +456,16 @@ a:hover {
     text-decoration: none;
     color: #222f3e;
     background-color: white;
+}
+
+.fa-linkedin,
+.fa-github-square {
+    color: white;
+    margin-top: 2%;
+}
+
+.fa-github-square {
+    margin-left: 1%;
 }
 
 .copyrightSection {
@@ -511,20 +507,4 @@ a:hover {
     position: fixed;
     top: 0px;
     width: 100%;
-}
-
-.loader {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 20;
-}
-
-.loader .inner {
-    width: 100%;
-    height: 100%;
-    background: url(../images/basketball1.gif) center center no-repeat;
 }
